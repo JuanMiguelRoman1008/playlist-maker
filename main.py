@@ -1,4 +1,4 @@
-# usage py main.py joqjqjyfhsxjmewhm077693pu 
+# usage py main.py username
 
 import os
 import csv
@@ -76,6 +76,3 @@ for name in names[1:]:
 # Populates Playlists with each of the songs 
 for name in names[1:]:
 	final = spotify.user_playlist_add_tracks(user = username, playlist_id = playlists[name], tracks = tracks[name])
-
-# Printing JSON
-# print(json.dumps(results, sort_keys=True, indent=4)) 
